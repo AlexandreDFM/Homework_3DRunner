@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5028325305569683265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4828485423398109672}
+  - component: {fileID: 2196453162574100120}
+  - component: {fileID: 1692982292374282212}
+  - component: {fileID: 8488865946998106434}
+  m_Layer: 0
+  m_Name: ZombieEnemies
+  m_TagString: EnemyTag
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4828485423398109672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5028325305569683265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.24380887, y: 1.2718505, z: 12.71813}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 781729092024850342}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2196453162574100120
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5028325305569683265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 192
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4273775, y: 3.3066127, z: 0.794487}
+  m_Center: {x: 0.2476295, y: 0.32340798, z: 0.29389572}
+--- !u!54 &1692982292374282212
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5028325305569683265}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
+--- !u!114 &8488865946998106434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5028325305569683265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eacd8d67a14bb543bdb73362dceb389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  explosionFX: {fileID: 152546, guid: 7473e1d6989cf6d4f956463f1b29a06b, type: 3}
+--- !u!1001 &781729092024978744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4828485423398109672}
+    m_Modifications:
+    - target: {fileID: 100030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_Name
+      value: SimpleZombies_01_Grey
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.24380887
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2718505
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2818699
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.000002786517
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+--- !u!4 &781729092024850342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400030, guid: 5e1170498f1a68a4bb6c553bf32aae46, type: 3}
+  m_PrefabInstance: {fileID: 781729092024978744}
+  m_PrefabAsset: {fileID: 0}
